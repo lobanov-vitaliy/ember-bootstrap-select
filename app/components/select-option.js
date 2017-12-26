@@ -1,0 +1,1 @@
+export { default } from 'ember-bootstrap-select/components/select-option';
