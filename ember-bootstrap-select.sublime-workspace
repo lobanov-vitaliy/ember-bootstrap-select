@@ -1,0 +1,1271 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"this"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"get",
+				"getComponent"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"wa",
+				"watchingByAssessmentData"
+			],
+			[
+				"bower",
+				"bower_components"
+			],
+			[
+				"ch",
+				"child"
+			],
+			[
+				"no",
+				"notificationService"
+			],
+			[
+				"rende",
+				"renderSectionErrors"
+			],
+			[
+				"sect",
+				"section"
+			],
+			[
+				"nde",
+				"node"
+			],
+			[
+				"isD",
+				"isDirty"
+			],
+			[
+				"the",
+				"then"
+			],
+			[
+				"ass",
+				"assessmentService"
+			],
+			[
+				"asse",
+				"assessmentService"
+			],
+			[
+				"ty",
+				"typeOf"
+			],
+			[
+				"section",
+				"sections_info"
+			],
+			[
+				"sec",
+				"sections_info"
+			],
+			[
+				"as",
+				"assessmentService"
+			],
+			[
+				"de",
+				"departments"
+			],
+			[
+				"wi",
+				"hasCreateUpdateClientWidget"
+			],
+			[
+				"co",
+				"columns"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"wid",
+				"widgetName"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"des",
+				"departments"
+			],
+			[
+				"c",
+				"client"
+			],
+			[
+				"po",
+				"popup"
+			],
+			[
+				"ge",
+				"genders"
+			],
+			[
+				"deps",
+				"departments"
+			],
+			[
+				"to",
+				"toArray"
+			],
+			[
+				"date",
+				"dateOfBirth"
+			],
+			[
+				"str",
+				"structure"
+			],
+			[
+				"getV",
+				"getValuesFromNodes"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"va",
+				"values"
+			],
+			[
+				"var",
+				"varnames"
+			],
+			[
+				"type",
+				"typeOf"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"pop",
+				"popupService"
+			],
+			[
+				"actio",
+				"action"
+			],
+			[
+				"fi",
+				"fixedColumns"
+			],
+			[
+				"is",
+				"isAssessmentReport"
+			],
+			[
+				"find",
+				"findBy"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"d",
+				"disabled"
+			],
+			[
+				"Co",
+				"config"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"ti",
+				"time"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"ele",
+				"elementType"
+			],
+			[
+				"clo",
+				"Close"
+			],
+			[
+				"pa",
+				"parse2"
+			],
+			[
+				"ex",
+				"exec"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"asee",
+				"assessment"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"clien",
+				"client_id"
+			],
+			[
+				"loc",
+				"lockedAssessments"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"pr",
+				"property"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"page",
+				"pageName"
+			],
+			[
+				"filter",
+				"filterBy"
+			],
+			[
+				"file",
+				"filterBy"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"_",
+				"_getUsersQuantityStatus"
+			],
+			[
+				"bu",
+				"builder"
+			],
+			[
+				"bui",
+				"build-data-table"
+			],
+			[
+				"b",
+				"builder"
+			],
+			[
+				"data",
+				"data-table"
+			],
+			[
+				"st",
+				"structure"
+			],
+			[
+				"sh",
+				"scheduleOnce"
+			],
+			[
+				"up",
+				"updateID"
+			],
+			[
+				"s",
+				"structure"
+			],
+			[
+				"u",
+				"updateID"
+			],
+			[
+				"she",
+				"scheduleOnce"
+			],
+			[
+				"mod",
+				"modals"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"update",
+				"updateTitle"
+			],
+			[
+				"ste",
+				"steps"
+			],
+			[
+				"step",
+				"steps"
+			],
+			[
+				"o",
+				"observer"
+			],
+			[
+				"wo",
+				"worker"
+			],
+			[
+				"ap",
+				"aplication-tabs"
+			],
+			[
+				"getC",
+				"getCurrentTab"
+			],
+			[
+				"getCu",
+				"getCurrentUrl"
+			],
+			[
+				"ro",
+				"routeParams"
+			],
+			[
+				"assessmentIs",
+				"assessmentIsLocked"
+			],
+			[
+				"in",
+				"in_progress"
+			],
+			[
+				"asses",
+				"assessment"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"lo",
+				"locked"
+			],
+			[
+				"ha",
+				"handleSubmitting"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"chan",
+				"changeChildrenDirty"
+			],
+			[
+				"asees",
+				"assessment"
+			],
+			[
+				"th",
+				"then"
+			],
+			[
+				"vali",
+				"validation"
+			],
+			[
+				"com",
+				"computed"
+			],
+			[
+				"assess",
+				"assessment"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"e",
+				"equal"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"pre",
+				"prepareValidateErrors"
+			],
+			[
+				"strin",
+				"string"
+			],
+			[
+				"typ",
+				"typeOf"
+			],
+			[
+				"la",
+				"later"
+			],
+			[
+				"error",
+				"errors"
+			],
+			[
+				"me",
+				"medications"
+			],
+			[
+				"search",
+				"searchBy"
+			],
+			[
+				"sor",
+				"sortingStructure"
+			],
+			[
+				"w",
+				"widgetName"
+			],
+			[
+				"set",
+				"setWidgetSetting"
+			],
+			[
+				"curr",
+				"currentSectionId"
+			],
+			[
+				"push",
+				"pushObject"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"sett",
+				"actionSettings"
+			],
+			[
+				"tr",
+				"changeTrigger"
+			],
+			[
+				"init",
+				"initialize"
+			],
+			[
+				"btn",
+				"btnType"
+			],
+			[
+				"ser",
+				"widgetService"
+			],
+			[
+				"C",
+				"Config"
+			],
+			[
+				"puhs",
+				"pushObject"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "addon/components/bootstrap-select.js",
+			"settings":
+			{
+				"buffer_size": 1535,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import Ember from 'ember';\n\nexport default Ember.Controller.extend({\n\tvalue:2,\n    options: [{\n        value: 1,\n        \n    }]\n});",
+			"file": "tests/dummy/app/controllers/application.js",
+			"file_size": 85,
+			"file_write_time": 131589482456895409,
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "addon/components/select-option.js",
+			"settings":
+			{
+				"buffer_size": 883,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"packe",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"package contro in",
+				"Package Control: Install Package"
+			],
+			[
+				"package contro",
+				"Package Control: Add Channel"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"package control  in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control re",
+				"Package Control: Remove Package"
+			],
+			[
+				"git diff ",
+				"Git: Open Modified Files"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"ab",
+				"About"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Format: Javascript",
+				"Format: Javascript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"packageControl: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/OpenServer/domains/ember-bootstrap-select",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon/components",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon/templates",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon/templates/components",
+		"/D/OpenServer/domains/ember-bootstrap-select/tests",
+		"/D/OpenServer/domains/ember-bootstrap-select/tests/dummy",
+		"/D/OpenServer/domains/ember-bootstrap-select/tests/dummy/app",
+		"/D/OpenServer/domains/ember-bootstrap-select/tests/dummy/app/controllers"
+	],
+	"file_history":
+	[
+		"/D/OpenServer/domains/ember-bootstrap-select/tests/dummy/app/templates/application.hbs",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon/templates/components/bootstrap-select.hbs",
+		"/D/OpenServer/domains/ember-bootstrap-select/addon/templates/components/select-option.hbs",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/app.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/ember-cli-build.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/acute-create-new-form.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/broccoli-uglify-sourcemap/index.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/bower.json",
+		"/C/Users/vlobanov/AppData/Roaming/Skype/My Skype Received Files/bower.json",
+		"/C/Users/vlobanov/Desktop/node_modules/broccoli-uglify-sourcemap/index.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-uglify/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/broccoli-asset-rev/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/broccoli-uglify-sourcemap/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/broccoli-uglify-sourcemap/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/uglify-js/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/uglify-js/package.json",
+		"/C/Users/vlobanov/Desktop/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/sshpk/lib/fingerprint.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/sshpk/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/broccoli-asset-rev/lib/fingerprint.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/setup-container.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/store.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/index.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/utils.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/system/store.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/system/store/serializers.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/system/store/serializer-response.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/system/store/finders.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/system/store/container-instance-cache.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/core.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/features.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/global.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/.arclint",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-assessment.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/acute-select-picker.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/services/assessment-lock.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment-bricks/signature/popup.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-client-info-panel.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-client-form.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/templates/components/widgets/standard/acute-client-form.hbs",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment-bricks/acute-basic.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment-bricks/acute-table.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment-bricks/acute-select.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/bower_components/pdfmake/bower.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/bower_components/fabric.js/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/bower_components/summernote/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/instance-initializers/assessment-lock.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/instance-initializers/windows-manager.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/services/assessment.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/fabric/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/fabric/dist/fabric.js",
+		"/C/Users/vlobanov/Desktop/node_modules/broccoli-asset-rev/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/merge-deep/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/broccoli-funnel/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/xml2js/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/moment-timezone/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/moment/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-spin-spinner/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-simple-auth/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-rollback-relationships/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-resolver/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-load-initializers/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-inflector/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-i18n/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-export-application-global/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-disable-proxy-controllers/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-release/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-mirage/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-inject-live-reload/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-htmlbars-inline-precompile/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-htmlbars/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-build-notifications/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-bootstrap-datetimepicker/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/moment/package.js",
+		"/C/Users/vlobanov/Desktop/node_modules/loader.js/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-drag-drop/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-windows-addon/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-dependency-checker/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-babel/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-clean-tmp/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-browserify/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-bootstrap/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-data/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-cli-app-version/package.json",
+		"/C/Users/vlobanov/Desktop/node_modules/ember-ajax/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/acute-data-table.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/package-lock.json",
+		"/C/OpenServer/domains/dist/index.html",
+		"/C/OpenServer/domains/dist/assets/vendor-19ccb101ab369809ff3297f7fe397234.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-cli-uglify/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/initializers/store-injections.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/addon/-private/initializers/store.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-cli/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/README.md",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/LICENSE",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/index.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-data/yarn.lock",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/dist/.htaccess",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/bower_components/ember/package.json",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/yarn.lock",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-login.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/adapters/application.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/form-builder/acute-builder-step.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/form-builder/brick-basic.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/utils/structure.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/services/builder.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-form-builder.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/config/build-notifications.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/form-builder/brick-area.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-forms-list.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/widgets/standard/acute-recovery.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment/acute-section-button.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/templates/components/assessment-bricks/signature/standard-signature.hbs",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/assessment-bricks/acute-date.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/components/acute-datetimepicker.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-cli-bootstrap-datetimepicker/addon/components/bs-datetimepicker.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-cli-bootstrap-datetimepicker/addon/templates/components/bs-datetimepicker.hbs",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/templates/components/assessment-bricks/date/standard-date.hbs",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-simple-auth/addon/session-stores/cookie.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-simple-auth/addon/services/session.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-simple-auth/addon/internal-session.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-simple-auth/addon/authenticators/oauth2-password-grant.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/polyfill.js",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/app/.babelrc",
+		"/D/OpenServer/domains/acutenet/nextgen_frontend/node_modules/ember-simple-auth/addon/authorizers/oauth2-bearer.js"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 125.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"parent",
+			"options"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "addon/components/bootstrap-select.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tests/dummy/app/controllers/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "addon/components/select-option.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546,
+								546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 156.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ember-bootstrap-select.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"signa",
+				"app\\components\\assessment-bricks\\signature\\popup.js"
+			],
+			[
+				"client-info",
+				"app\\components\\widgets\\standard\\acute-client-info-panel.js"
+			],
+			[
+				"acute-assessmetn",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"clinet-for",
+				"app\\components\\widgets\\standard\\acute-client-form.js"
+			],
+			[
+				"assessme",
+				"app\\services\\assessment-lock.js"
+			],
+			[
+				"aute-sele",
+				"app\\components\\assessment-bricks\\acute-select.js"
+			],
+			[
+				"acute-se",
+				"app\\components\\acute-select-picker.js"
+			],
+			[
+				"acute-sele",
+				"app\\components\\acute-select-picker.js"
+			],
+			[
+				"acute-client-for",
+				"app\\templates\\components\\widgets\\standard\\acute-client-form.hbs"
+			],
+			[
+				"client-for",
+				"app\\components\\widgets\\standard\\acute-client-form.js"
+			],
+			[
+				"assessment-",
+				"app\\services\\assessment-lock.js"
+			],
+			[
+				"assessment",
+				"app\\services\\assessment.js"
+			],
+			[
+				"acute-assess",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"acute-cle",
+				"app\\components\\widgets\\standard\\acute-client-form.js"
+			],
+			[
+				"acute-lo",
+				"app\\components\\widgets\\standard\\acute-login.js"
+			],
+			[
+				"form-builder",
+				"app\\components\\widgets\\standard\\acute-form-builder.js"
+			],
+			[
+				"form-cuil",
+				"app\\components\\form-builder\\acute-builder-step.js"
+			],
+			[
+				"builder",
+				"app\\services\\builder.js"
+			],
+			[
+				"brick-ba",
+				"app\\components\\form-builder\\brick-basic.js"
+			],
+			[
+				"bria",
+				"app\\components\\form-builder\\brick-area.js"
+			],
+			[
+				"forms-l",
+				"app\\components\\widgets\\standard\\acute-forms-list.js"
+			],
+			[
+				"butt",
+				"app\\components\\assessment\\acute-section-button.js"
+			],
+			[
+				"acute-login",
+				"app\\components\\widgets\\standard\\acute-login.js"
+			],
+			[
+				"rev",
+				"app\\components\\widgets\\standard\\acute-recovery.js"
+			],
+			[
+				"acute-datetime",
+				"app\\components\\acute-datetimepicker.js"
+			],
+			[
+				"date",
+				"app\\components\\acute-datetimepicker.js"
+			],
+			[
+				"acute-date",
+				"app\\components\\assessment-bricks\\acute-date.js"
+			],
+			[
+				"assessment-lo",
+				"app\\services\\assessment-lock.js"
+			],
+			[
+				"acute-ser",
+				"app\\components\\assessment-bricks\\acute-search.js"
+			],
+			[
+				"acute-data-table",
+				"app\\components\\assessment-bricks\\acute-data-table.js"
+			],
+			[
+				"data-ta",
+				"app\\components\\assessment-bricks\\acute-data-table.js"
+			],
+			[
+				"acute-ass",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"structe",
+				"app\\services\\structure.js"
+			],
+			[
+				"login",
+				"app\\routes\\public\\login.js"
+			],
+			[
+				"acute-log",
+				"app\\components\\widgets\\standard\\acute-login.js"
+			],
+			[
+				"recove",
+				"app\\components\\widgets\\standard\\acute-recovery.js"
+			],
+			[
+				"section",
+				"app\\components\\assessment\\acute-section-button.js"
+			],
+			[
+				"stan",
+				"app\\templates\\components\\assessment-bricks\\checkbox\\standard-checkbox.hbs"
+			],
+			[
+				"chec",
+				"app\\templates\\components\\assessment-bricks\\checkbox\\standard-checkbox.hbs"
+			],
+			[
+				"sig",
+				"app\\templates\\components\\assessment-bricks\\signature\\standard-signature.hbs"
+			],
+			[
+				"acute-spi",
+				"app\\templates\\components\\acute-global-spinner.hbs"
+			],
+			[
+				"spin",
+				"app\\templates\\components\\acute-spinner.hbs"
+			],
+			[
+				"acute-for",
+				"app\\components\\widgets\\standard\\acute-form-builder.js"
+			],
+			[
+				"acute-as",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"_sty",
+				"app\\styles\\common\\_display-property.scss"
+			],
+			[
+				"acu",
+				"app\\components\\acute-autocomplete.js"
+			],
+			[
+				"acute-asses",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"acute-asse",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"acute",
+				"app\\components\\acute-autocomplete.js"
+			],
+			[
+				"",
+				"app\\router.js"
+			],
+			[
+				"acute-sec",
+				"app\\templates\\components\\form-builder\\acute-section-button.hbs"
+			],
+			[
+				"create",
+				"app\\components\\form-builder\\acute-create-section.js"
+			],
+			[
+				"acute-asees",
+				"app\\components\\widgets\\standard\\acute-assessment.js"
+			],
+			[
+				"acute-build",
+				"app\\components\\form-builder\\acute-builder-step.js"
+			],
+			[
+				"nex",
+				"D:\\vlobanov\\nextgen.sublime-project"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\vlobanov\\nextgen.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"AbstractDependentTest"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
