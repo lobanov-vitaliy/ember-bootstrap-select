@@ -1,26 +1,36 @@
 # ember-bootstrap-select
 
-This README outlines the details of collaborating on this Ember addon.
+An ember addon for using [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/) in Ember applications.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-bootstrap-select`
-* `npm install`
+```
+npm install ember-bootstrap-select
+```
+ember-bootstrap-select thinly wraps a [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/) element 
+so that it can be object and binding aware. It is used in conjuction with the select-option 
+component to construct select boxes. E.g.
 
-## Running
+```handlebars
+{{#bootstrap-select value=value as |select|}}
+    {{#select.option value=1}}Option 1{{/select.option}}
+    {{#select.option value=2 disabled=true}}Option 2{{/select.option}}
+    {{#select.option value=3}}Option 3{{/select.option}}
+{{/bootstrap-select}}
+```
+the options are always up to date, so that when the object bound to value changes, the corresponding option becomes selected.
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+### Multiselect
+
+```handlebars
+{{#bootstrap-select multiple=true value=value as |select|}}
+    {{#select.option value=1}}Option 1{{/select.option}}
+    {{#select.option value=2 disabled=true}}Option 2{{/select.option}}
+    {{#select.option value=3}}Option 3{{/select.option}}
+{{/bootstrap-select}}
+```
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
