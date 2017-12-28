@@ -2,9 +2,8 @@ import Ember from 'ember';
 import layout from '../templates/components/bootstrap-select';
 
 const {
-    set, get,
+    set,
     observer,
-    computed,
     on,
     run,
     A
@@ -14,31 +13,71 @@ export default Ember.Component.extend({
     layout,
     tagName: 'select',
     classNameBindings: ['tick:show-tick'],
-
-    isRender: false,
-
-    container: 'body',
-    disabled: false,
-    multiple: false,
-    tick:     true,
-    options:  A(),
-
     attributeBindings: [
         'disabled',
         'multiple',
         'title',
+        'width:data-width',
         'header:data-header',
         'format:data-selected-text-format',
         'container:data-container',
-        'search:data-live-search'
+        'search:data-live-search',
+        'actionsBox:data-actions-box'
     ],
 
+    /**
+     * Append the select to a specific element, e.g. container: 'body'
+     * 
+     * @property container
+     * @type String
+     * @default 'body'
+     * @public
+     */
+    container: 'body',
+
+    /**
+     * Disabled select boxes
+     * 
+     * @property disabled
+     * @type Boolean
+     * @default false
+     * @public
+     */
+    disabled: false,
+
+    /**
+     * Multiple select boxes
+     * 
+     * @property multiple
+     * @type Boolean
+     * @default false
+     * @public
+     */
+    multiple: false,
+
+    /**
+     * Show the checkmark icon on standard select boxes
+     * 
+     * @property tick
+     * @type Boolean
+     * @default true
+     * @public
+     */
+    tick: true,
+
+    /**
+     * Collection of all `option-item`s that are children
+     * @property options
+     * @type {Array}
+     */
+    options: A(),
+
     change: on(
-        'didInsertElement', 
+        'didInsertElement',
         observer(
-            'value', 
+            'value',
             function() {
-                this.getComponent().selectpicker('val', this.getValue());
+                this._pickerCall(this._pickerSetValue);
             }
         )
     ),
@@ -46,25 +85,15 @@ export default Ember.Component.extend({
     refresh: observer(
         'disabled',
         'options.[]',
-        function(){
-            run.scheduleOnce('afterRender', this, this._selectpickerRefresh);
+        function() {
+            this._pickerCall(this._pickerRefresh);
         }
     ),
-
-    didInsertElement() {
-        let component = this.getComponent();
-        component.selectpicker();
-        component.on('changed.bs.select', () => {
-            set(this, 'value', component.selectpicker('val'));
-        });
-
-        this.isRender = true;
-    },
 
     getValue() {
         let value = this.value;
 
-        if (value === undefined || 
+        if (value === undefined ||
             value === null) {
             value = '';
         }
@@ -72,11 +101,25 @@ export default Ember.Component.extend({
         return value;
     },
 
-    getComponent() {
-        return this.$();
+    _pickerCall(func) {
+        run.scheduleOnce('afterRender', this, func);
     },
 
-    _selectpickerRefresh(){
-        this.getComponent().selectpicker('refresh');
-    }
+    _pickerRefresh() {
+        this.$().selectpicker('refresh');
+    },
+
+    _pickerSetValue() {
+        this.$().selectpicker('val', this.getValue());
+    },
+
+    didInsertElement() {
+        let component = this.$();
+        component.selectpicker();
+        component.on('changed.bs.select', () => {
+            set(this, 'value', component.selectpicker('val'));
+        });
+
+        this.isRender = true;
+    },
 });

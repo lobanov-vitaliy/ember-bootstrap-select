@@ -1,7 +1,7 @@
 {
   "name": "ember-bootstrap-select",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An ember-cli addon for using `bootstrap-select` in Ember.js applications.",
   "keywords": [
     "ember-addon"
   ],
