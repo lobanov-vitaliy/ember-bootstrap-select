@@ -1,4 +1,5 @@
 # ember-bootstrap-select
+[![npm version](https://badge.fury.io/js/ember-bootstrap-select.svg)](https://badge.fury.io/js/ember-bootstrap-select)
 
 An ember addon for using [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/) in Ember applications.
 
