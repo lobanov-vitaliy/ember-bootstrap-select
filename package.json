@@ -5,6 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
+  "repository": "https://github.com/lobanov-vitaliy/ember-bootstrap-select",
   "license": "MIT",
   "author": {
     "name": "Lobanov Vitaliy",
