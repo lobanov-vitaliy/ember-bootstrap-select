@@ -1,15 +1,13 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
+import { get } from '@ember/object';
 
-const {
-  Component,
-  computed,
-  observer,
-  get
-} = Ember;
-
-const getAttr = computed('params', function(name) {
-  return get(this, `params.${name}`) || null;
-});
+const getAttr = computed(
+  'params',
+  function(name) {
+    return get(this, 'params.' + name) || null;
+  }
+);
 
 export default Component.extend({
   tagName: 'option',

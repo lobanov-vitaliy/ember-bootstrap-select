@@ -1,15 +1,11 @@
-import Ember from 'ember';
 import layout from '../templates/components/bootstrap-select';
 import { next, once } from '@ember/runloop';
-import { get } from '@ember/object';
+import { get, set } from '@ember/object';
 import { A } from '@ember/array';
+import Component from '@ember/component';
+import {  observer } from '@ember/object';
 
-const {
-  set,
-  observer,
-} = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
   tagName: 'select',
   classNameBindings: ['tick:show-tick'],
@@ -27,7 +23,7 @@ export default Ember.Component.extend({
 
   /**
    * Append the select to a specific element, e.g. container: 'body'
-   * 
+   *
    * @property container
    * @type String
    * @default 'body'
@@ -37,7 +33,7 @@ export default Ember.Component.extend({
 
   /**
    * Disabled select boxes
-   * 
+   *
    * @property disabled
    * @type Boolean
    * @default false
@@ -47,7 +43,7 @@ export default Ember.Component.extend({
 
   /**
    * Multiple select boxes
-   * 
+   *
    * @property multiple
    * @type Boolean
    * @default false
@@ -57,7 +53,7 @@ export default Ember.Component.extend({
 
   /**
    * Show the checkmark icon on standard select boxes
-   * 
+   *
    * @property tick
    * @type Boolean
    * @default true
@@ -67,15 +63,13 @@ export default Ember.Component.extend({
 
   /**
    * Disable select if don't have options
-   * 
+   *
    * @property disabledEmpty
    * @type Boolean
    * @default false
    * @public
    */
   disabledEmpty: false,
-
-  _isChangeSelect: false,
 
   /**
    * Collection of all `option-item`s that are children
@@ -99,6 +93,7 @@ export default Ember.Component.extend({
       if (get(this, 'disabledEmpty') && get(this, 'options.length') === 0) {
         set(this, 'disabled', true);
       }
+
       once(this, 'updateSelectValue');
     }
   ),
@@ -128,14 +123,15 @@ export default Ember.Component.extend({
 
   didInsertElement() {
     const component = this.$();
-    component.selectpicker();
+    component.selectpicker({
+      val: this.getValue(),
+    });
     component.on('changed.bs.select', (e, clickedIndex) => {
-      if (typeof clickedIndex !== 'undefined'){
+      if (typeof clickedIndex !== 'undefined') {
         set(this, 'value', component.selectpicker('val'));
       }
     });
     this.addObserver('value', this, 'updateSelectValue');
-    this.updateSelectValue();
   },
 
   willDestroyElement() {
