@@ -1,12 +1,12 @@
 import Ember from 'ember';
 import layout from '../templates/components/bootstrap-select';
+import { next, once } from '@ember/runloop';
+import { get } from '@ember/object';
+import { A } from '@ember/array';
 
 const {
   set,
   observer,
-  on,
-  run,
-  A
 } = Ember;
 
 export default Ember.Component.extend({
@@ -66,62 +66,80 @@ export default Ember.Component.extend({
   tick: true,
 
   /**
+   * Disable select if don't have options
+   * 
+   * @property disabledEmpty
+   * @type Boolean
+   * @default false
+   * @public
+   */
+  disabledEmpty: false,
+
+  _isChangeSelect: false,
+
+  /**
    * Collection of all `option-item`s that are children
    * @property options
    * @type {Array}
    */
   options: A(),
 
-  change: on(
-    'didInsertElement',
-    observer(
-      'value',
-      function() {
-        this._pickerCall(this._pickerSetValue);
-      }
-    )
-  ),
-
   refresh: observer(
     'disabled',
     'options.[]',
+    'options.@each.disabled',
+    'options.@each.value',
+    'options.@each.subtext',
+    'options.@each.tokens',
+    'options.@each.icon',
+    'options.@each.content',
+    'options.@each.title',
+    'options.@each.size',
     function() {
-      this._pickerCall(this._pickerRefresh);
+      if (get(this, 'disabledEmpty') && get(this, 'options.length') === 0) {
+        set(this, 'disabled', true);
+      }
+      once(this, 'updateSelectValue');
     }
   ),
 
+  updateSelectValue(){
+    next(() => {
+      const component = this.$();
+      component.selectpicker('val', this.getValue());
+      component.selectpicker('refresh');
+    });
+  },
+
   getValue() {
+    const options = get(this, 'options') || A();
     let value = this.value;
 
-    if (value === undefined ||
-      value === null) {
+    if (value === undefined || value === null) {
       value = '';
+    } else if (Array.isArray(value)) {
+      value = value.map(String).filter(id => options.findBy('value', id));
+    } else {
+      value = options.findBy('value', String(value)) ? value : '';
     }
 
     return value;
   },
 
-  _pickerCall(func) {
-    run.scheduleOnce('afterRender', this, func);
-  },
-
-  _pickerRefresh() {
-    this.$().selectpicker('refresh');
-  },
-
-  _pickerSetValue() {
-    this.$().selectpicker('val', this.getValue());
-  },
-
   didInsertElement() {
-    let component = this.$();
+    const component = this.$();
     component.selectpicker();
-    component.on('changed.bs.select', () => {
-      set(this, 'value', component.selectpicker('val'));
+    component.on('changed.bs.select', (e, clickedIndex) => {
+      if (typeof clickedIndex !== 'undefined'){
+        set(this, 'value', component.selectpicker('val'));
+      }
     });
+    this.addObserver('value', this, 'updateSelectValue');
+    this.updateSelectValue();
   },
-  
+
   willDestroyElement() {
     this.$().off('changed.bs.select');
+    this.removeObserver('value', this, 'updateSelectValue');
   }
 });

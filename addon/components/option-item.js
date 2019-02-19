@@ -34,20 +34,6 @@ export default Component.extend({
   content: getAttr,
   subtext: getAttr,
 
-  refresh: observer(
-    'disabled',
-    'value',
-    'subtext',
-    'tokens',
-    'icon',
-    'content',
-    'title',
-    'size',
-    function() {
-      get(this, 'parent').refresh();
-    }
-  ),
-
   init() {
     this._super();
     get(this, 'parent.options').pushObject(this);
