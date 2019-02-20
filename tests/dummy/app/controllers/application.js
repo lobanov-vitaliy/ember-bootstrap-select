@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
     multiple: false,
-    value: 1,
+    value: [2, 3],
     options: Ember.A([{
         value: 2,
         label: 'Option 2',

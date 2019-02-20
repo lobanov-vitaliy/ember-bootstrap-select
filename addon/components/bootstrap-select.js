@@ -1,9 +1,9 @@
-import layout from '../templates/components/bootstrap-select';
-import { next, once } from '@ember/runloop';
+import layout from 'ember-bootstrap-select/templates/components/bootstrap-select';
+import { run, once } from '@ember/runloop';
 import { get, set } from '@ember/object';
 import { A } from '@ember/array';
 import Component from '@ember/component';
-import {  observer } from '@ember/object';
+import { observer, computed } from '@ember/object';
 
 export default Component.extend({
   layout,
@@ -13,12 +13,13 @@ export default Component.extend({
     'disabled',
     'multiple',
     'title',
+    'size:data-size',
     'width:data-width',
     'header:data-header',
     'format:data-selected-text-format',
     'container:data-container',
-    'search:data-live-search',
-    'actionsBox:data-actions-box'
+    'showSearch:data-live-search',
+    'showActionsBox:data-actions-box'
   ],
 
   /**
@@ -62,7 +63,7 @@ export default Component.extend({
   tick: true,
 
   /**
-   * Disable select if don't have options
+   * Disabled select box if don't have options
    *
    * @property disabledEmpty
    * @type Boolean
@@ -78,28 +79,33 @@ export default Component.extend({
    */
   options: A(),
 
+  showSearch: computed(
+    'search',
+    function() {
+      return this.search ? 'true' : false;
+    }
+  ),
+
+  showActionsBox: computed(
+    'actionsBox',
+    function() {
+      return this.actionsBox ? 'true' : false;
+    }
+  ),
+
   refresh: observer(
     'disabled',
     'options.[]',
-    'options.@each.disabled',
-    'options.@each.value',
-    'options.@each.subtext',
-    'options.@each.tokens',
-    'options.@each.icon',
-    'options.@each.content',
-    'options.@each.title',
-    'options.@each.size',
     function() {
       if (get(this, 'disabledEmpty') && get(this, 'options.length') === 0) {
         set(this, 'disabled', true);
       }
-
       once(this, 'updateSelectValue');
     }
   ),
 
   updateSelectValue(){
-    next(() => {
+    run(() => {
       const component = this.$();
       component.selectpicker('val', this.getValue());
       component.selectpicker('refresh');
@@ -123,15 +129,13 @@ export default Component.extend({
 
   didInsertElement() {
     const component = this.$();
-    component.selectpicker({
-      val: this.getValue(),
+    component.selectpicker();
+    component.on('changed.bs.select', () => {
+      this.removeObserver('value', this, 'updateSelectValue');
+      set(this, 'value', component.selectpicker('val'));
+      this.addObserver('value', this, 'updateSelectValue');
     });
-    component.on('changed.bs.select', (e, clickedIndex) => {
-      if (typeof clickedIndex !== 'undefined') {
-        set(this, 'value', component.selectpicker('val'));
-      }
-    });
-    this.addObserver('value', this, 'updateSelectValue');
+    component.selectpicker('val', this.getValue());
   },
 
   willDestroyElement() {
