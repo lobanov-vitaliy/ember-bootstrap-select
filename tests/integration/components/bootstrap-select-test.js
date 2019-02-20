@@ -16,18 +16,6 @@ moduleForComponent('bootstrap-select', {
 });
 
 test('Test `Standard` selectpicker', function(assert) {
-  this.render(hbs `
-        {{#bootstrap-select 
-            multiple=false 
-            value=value as |select|}}
-            {{#each options as |option|}}
-                {{#select.option 
-                    disabled=option.disabled 
-                    subtext=option.subtext
-                    value=option.value}} {{option.label}} {{/select.option}}
-            {{/each}}
-        {{/bootstrap-select}}
-    `);
 
   this.setProperties({
     value: 1,
@@ -46,10 +34,20 @@ test('Test `Standard` selectpicker', function(assert) {
     }])
   });
 
-  let component = this.$('select');
-  /* open selectpicker */
-  component.selectpicker('trigger');
+  this.render(hbs `
+    {{#bootstrap-select
+      multiple=false
+      value=value as |select|}}
+      {{#each options as |option|}}
+        {{#select.option
+          disabled=option.disabled
+          subtext=option.subtext
+          value=option.value}} {{option.label}} {{/select.option}}
+      {{/each}}
+    {{/bootstrap-select}}
+  `);
 
+  let component = this.$('select');
   assert.equal(component.selectpicker('val'), 1, 'initialize value.');
   run(() => {
     component.selectpicker('val', '3').trigger('change');
@@ -83,19 +81,6 @@ test('Test `Standard` selectpicker', function(assert) {
 });
 
 test('Test `Multiple` selectpicker', function(assert) {
-  this.render(hbs `
-        {{#bootstrap-select 
-            multiple=true 
-            value=value as |select|}}
-            {{#each options as |option|}}
-                {{#select.option 
-                    disabled=option.disabled 
-                    subtext=option.subtext
-                    value=option.value}} {{option.label}} {{/select.option}}
-            {{/each}}
-        {{/bootstrap-select}}
-    `);
-
   this.setProperties({
     value: [2, 3],
     options: A([{
@@ -113,13 +98,22 @@ test('Test `Multiple` selectpicker', function(assert) {
     }])
   });
 
-  let component = this.$('select');
-  /* open selectpicker */
-  component.selectpicker('trigger');
+  this.render(hbs `
+    {{#bootstrap-select
+      multiple=true
+      value=value as |select|}}
+      {{#each options as |option|}}
+        {{#select.option
+          disabled=option.disabled
+          subtext=option.subtext
+          value=option.value}} {{option.label}} {{/select.option}}
+      {{/each}}
+    {{/bootstrap-select}}
+  `);
 
+  let component = this.$('select');
   assert.deepEqual(component.selectpicker('val'), ["2", "3"], 'initialize value.');
-  run(() => {
-    component.selectpicker('val', ['1']).trigger('change');
-  });
+  this.get('options').removeObject(this.get('options').findBy('value', 3));
+  component.selectpicker('val', ['1']);
   assert.deepEqual(this.value, ['1'], 'change selectpicker value');
 });

@@ -1,15 +1,11 @@
-import Ember from 'ember';
-import layout from '../templates/components/bootstrap-select';
+import layout from 'ember-bootstrap-select/templates/components/bootstrap-select';
+import { run, once } from '@ember/runloop';
+import { get, set } from '@ember/object';
+import { A } from '@ember/array';
+import Component from '@ember/component';
+import { observer, computed } from '@ember/object';
 
-const {
-  set,
-  observer,
-  on,
-  run,
-  A
-} = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
   tagName: 'select',
   classNameBindings: ['tick:show-tick'],
@@ -17,17 +13,18 @@ export default Ember.Component.extend({
     'disabled',
     'multiple',
     'title',
+    'size:data-size',
     'width:data-width',
     'header:data-header',
     'format:data-selected-text-format',
     'container:data-container',
-    'search:data-live-search',
-    'actionsBox:data-actions-box'
+    'showSearch:data-live-search',
+    'showActionsBox:data-actions-box'
   ],
 
   /**
    * Append the select to a specific element, e.g. container: 'body'
-   * 
+   *
    * @property container
    * @type String
    * @default 'body'
@@ -37,7 +34,7 @@ export default Ember.Component.extend({
 
   /**
    * Disabled select boxes
-   * 
+   *
    * @property disabled
    * @type Boolean
    * @default false
@@ -47,7 +44,7 @@ export default Ember.Component.extend({
 
   /**
    * Multiple select boxes
-   * 
+   *
    * @property multiple
    * @type Boolean
    * @default false
@@ -57,7 +54,7 @@ export default Ember.Component.extend({
 
   /**
    * Show the checkmark icon on standard select boxes
-   * 
+   *
    * @property tick
    * @type Boolean
    * @default true
@@ -66,62 +63,83 @@ export default Ember.Component.extend({
   tick: true,
 
   /**
+   * Disabled select box if don't have options
+   *
+   * @property disabledEmpty
+   * @type Boolean
+   * @default false
+   * @public
+   */
+  disabledEmpty: false,
+
+  /**
    * Collection of all `option-item`s that are children
    * @property options
    * @type {Array}
    */
   options: A(),
 
-  change: on(
-    'didInsertElement',
-    observer(
-      'value',
-      function() {
-        this._pickerCall(this._pickerSetValue);
-      }
-    )
+  showSearch: computed(
+    'search',
+    function() {
+      return this.search ? 'true' : false;
+    }
+  ),
+
+  showActionsBox: computed(
+    'actionsBox',
+    function() {
+      return this.actionsBox ? 'true' : false;
+    }
   ),
 
   refresh: observer(
     'disabled',
     'options.[]',
     function() {
-      this._pickerCall(this._pickerRefresh);
+      if (get(this, 'disabledEmpty') && get(this, 'options.length') === 0) {
+        set(this, 'disabled', true);
+      }
+      once(this, 'updateSelectValue');
     }
   ),
 
+  updateSelectValue(){
+    run(() => {
+      const component = this.$();
+      component.selectpicker('val', this.getValue());
+      component.selectpicker('refresh');
+    });
+  },
+
   getValue() {
+    const options = get(this, 'options') || A();
     let value = this.value;
 
-    if (value === undefined ||
-      value === null) {
+    if (value === undefined || value === null) {
       value = '';
+    } else if (Array.isArray(value)) {
+      value = value.map(String).filter(id => options.findBy('value', id));
+    } else {
+      value = options.findBy('value', String(value)) ? value : '';
     }
 
     return value;
   },
 
-  _pickerCall(func) {
-    run.scheduleOnce('afterRender', this, func);
-  },
-
-  _pickerRefresh() {
-    this.$().selectpicker('refresh');
-  },
-
-  _pickerSetValue() {
-    this.$().selectpicker('val', this.getValue());
-  },
-
   didInsertElement() {
-    let component = this.$();
+    const component = this.$();
     component.selectpicker();
     component.on('changed.bs.select', () => {
+      this.removeObserver('value', this, 'updateSelectValue');
       set(this, 'value', component.selectpicker('val'));
+      this.addObserver('value', this, 'updateSelectValue');
     });
+    component.selectpicker('val', this.getValue());
   },
-  
+
   willDestroyElement() {
     this.$().off('changed.bs.select');
+    this.removeObserver('value', this, 'updateSelectValue');
   }
 });

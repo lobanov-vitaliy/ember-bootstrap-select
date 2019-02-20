@@ -1,9 +1,13 @@
 <h2 id="title">Welcome to Ember</h2>
-{{#bootstrap-select multiple=multiple value=value as |select|}}
-    {{#each options as |option|}}
-        {{#select.option 
-            disabled=option.disabled 
-            value=option.value}} {{option.label}} {{/select.option}}
-    {{/each}}
+{{#bootstrap-select multiple=true search=true disabledEmpty=true value=value as |select|}}
+    <optgroup label="Picnic">
+        {{#each options as |option|}}
+            {{#select.option 
+                title="222"
+                subtext="333"
+                disabled=option.disabled 
+                value=option.value}} {{option.label}} {{/select.option}}
+        {{/each}}
+    </optgroup>
 {{/bootstrap-select}}
 value: {{value}}
